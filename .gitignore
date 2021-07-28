@@ -1,0 +1,4 @@
+# Vendor do composer
+vendor
+# Configurações do PhpStorm
+.idea

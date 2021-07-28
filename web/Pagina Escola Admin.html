@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap CRUD Data Table for Database with Modal Form</title>
+    <link rel="stylesheet" href="https: //fonts.googleapis.com/css?family=Roboto|Varela+Round">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light nav-cor">
+    <a href="#" class="navbar-brand">
+        <img src="imagens/IPB-Branco.png" height="58" >
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="navlink dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Visitante
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="Escolas.html">Escolas</a>
+                    <a class="dropdown-item" href="Pagina%20Departamento.html">Departamento de informatica</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="navlink dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Docente
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="Pagina%20Perfil%20Docente.html">Perfil</a>
+                    <a class="dropdown-item" href="Listagem%20dos%20Projetos.html">Projetos</a>
+                    <a class="dropdown-item" href="Publicações%20Admin.html">Publicações</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="navlink dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Diretor
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="Pagina%20Perfil%20Docente.html">Perfil</a>
+                    <a class="dropdown-item" href="Listagem%20dos%20Projetos.html">Projetos</a>
+                    <a class="dropdown-item" href="Publicações%20Admin.html">Publicações</a>
+                    <a class="dropdown-item" href="Departamentos%20Diretor.html">Departamentos</a>
+                    <a class="dropdown-item" href="Pagina%20Escola%20Diretor.html">Escola</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="navlink dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Coordenador
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="Pagina%20Perfil%20Docente.html">Perfil</a>
+                    <a class="dropdown-item" href="Listagem%20dos%20Projetos.html">Projetos</a>
+                    <a class="dropdown-item" href="Publicações%20Admin.html">Publicações</a>
+                    <a class="dropdown-item" href="Pagina%20Departamento.html">Departamento</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="navlink dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Admin
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="Pagina%20Perfil%20Admin.html">Perfil</a>
+                    <a class="dropdown-item" href="Departamentos%20Admin.html">Departamentos</a>
+                    <a class="dropdown-item" href="Pagina%20Escola%20Admin.html">ESTIG</a>
+                    <a class="dropdown-item" href="Pagina%20Admin%20ESEB.html">ESEB</a>
+                    <a class="dropdown-item" href="Pagina%20Admin%20ESA.html">ESA</a>
+                    <a class="dropdown-item" href="Pagina%20Admin%20ESS.html">ESS</a>
+                    <a class="dropdown-item" href="Adicionar%20Escolas.html">Adicionar Escolas</a>
+                    <a class="dropdown-item" href="Utilizadores%20Admin.html">Utilizadores</a>
+                </div>
+            </li>
+        </ul>
+        <div class="navbar-nav ml-auto">
+            <a href="Principal.html" class="navlink">Logout</a>
+        </div>
+    </div>
+</nav>
+<div>
+    <div class="col-right-escola">
+        <div class="titulo-escola">Escola Superior de Tecnologia e Gestão</div>
+        <div class="subtitulo-escola">Diretor</div>
+        <div class="container-dir">
+            <img src="imagens/avatar.jpg" height="200" width="150"/>
+            <div class="texto-perfildocente">
+                <label>Diretor</label>
+                <fieldset>
+                    <label>Nome:</label>
+                    <text>Rodrigo Morais</text>
+                </fieldset>
+                <fieldset>
+                    <label>Email:</label>
+                    <text>rodrigomorais@ipb.pt</text>
+                </fieldset>
+            </div>
+        </div>
+
+    </div>
+    <div ><img class="image_escola" src="imagens/estig.jpg"/></div>
+    <div class="texto-inst">A Escola Superior de Tecnologia e Gestão de Bragança (ESTiG), criada em 1990, desenvolve a sua missão de formação e de investigação/desenvolvimento nas áreas da engenharia e das ciências empresariais.
+
+        Para a prossecução dos seus objetivos, a ESTiG dispõe de instalações no Campus de Santa Apolónia; com uma área global de 14000m2, o edifício da ESTiG comporta 112 gabinetes de docentes, 1 auditório, 2 anfiteatros, 25 salas de aula, 5 salas de informática, 1 biblioteca e 20 laboratórios, que ocupam uma área global superior a 3000m2, para além de zonas de convívio e de apoio técnico/administrativo.</div>
+
+    <div class="text-center color">
+        <a href="Pagina%20Editar%20Escola%20Admin.html" class="btn" >Editar</a>
+    </div>
+    <div class="text-center color">
+        <a href="#myModal" class="btn" data-toggle="modal">Excluir</a>
+    </div>
+
+</div>
+
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog modal-confirm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="icon-box">
+                    <i class="material-icons">&#xE876;</i>
+                </div>
+                <h4 class="modal-title w-100">Excluido com sucesso</h4>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-success btn-block" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
